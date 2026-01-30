@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎓 Student Management System</h1>
+
+    <div class="btn-group">
+        <button onclick="showAddForm()">➕ Add Student</button>
+        <button onclick="showUpdateForm()">✏️ Update Student</button>
+        <button onclick="showDeleteForm()">🗑️ Delete Student</button>
+    </div>
+
+    <p id="msg"></p>
+
+    <div id="formContainer"></div>
+
+    <div class="table-container">
+        <h2>📋 Students Database</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>SID</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Branch</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
